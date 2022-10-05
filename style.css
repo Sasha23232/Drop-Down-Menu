@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'dunbarlowbold';
+    src: url('fonts/dunbarlow-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: bisque;
+    font-family: 'dunbarlowbold';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: blueviolet;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+}
+
+.test {
+    font-size: 28px;
+}
+
+.test a {
+    text-decoration: none;
+    color: aquamarine;
+    padding: 20px 30px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.test a:hover {
+    background-color: blue;
+}
+
+.test li:hover {
+    background-color: aqua;
+
+}
+
+.test li:hover a {
+    background-color: transparent;
+
+}
+
+.test li a {
+    list-style: none;
+    font-size: 19px;
+    color: brown;
+}
+
+.test ul {
+    position: absolute;
+    background-color: aliceblue;
+    width: 170px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+.test:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
